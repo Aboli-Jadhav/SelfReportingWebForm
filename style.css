@@ -1,0 +1,243 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+   background-position: center;
+   background-size: cover;
+   font-family: sans-serif;
+   margin-top: 40px;
+}
+.regform{
+    width: 800px;
+    background-color: rgb(0,0,0,0.6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius:15px 15px 0px 0px;
+}
+.main{
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding : 10px;
+}
+#name{
+    width: 100%;
+    height: 100px;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.imgtxt{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 150px;
+    color: white;
+	display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+}
+.imgs{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 250px;
+    color: white;
+	display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+}
+.instruct{
+    width: 800px;
+    margin: auto;
+    color: #FFFFFF;
+    text-align: left;
+}
+.firstname{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.lastname{
+    position: relative;
+    left: 235px;
+    top:-37px;
+    line-height:40px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.email{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.address{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.city{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+	
+	
+}
+.state{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.code{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.mob_no{
+    position: relative;
+    left: 235px;
+    top:-37px;
+    line-height:40px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+	
+}
+.option{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+}
+#fever{
+    margin-left: 25px;
+    color:white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.radio{
+    position: relative;
+    left: 300px;
+    top:-37px;
+    line-height:40px;
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 20px;
+    margin-left: 25px;
+    color:white;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    cursor: pointer;
+    outline: none;
+} 
+button{
+    background-color:#3BAF9F;
+    display:inline-block;
+    margin:20px 0px 0px 20px;
+    text-align:center;
+    border-radius:12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+button:hover{
+    background-color: #5390F5;
+}
+.purpose_of_meet{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 480px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+#txt_tm{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 180px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+#txt_dt{
+    position: relative;
+    left: 200px;
+    top:-37px;
+    line-height:40px;
+    width: 180px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.img{
+    margin-left: 25px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 700;
+}

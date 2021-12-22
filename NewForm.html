@@ -1,0 +1,139 @@
+<html>
+<head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getDataForList()">
+
+  <div class="regform">
+            <h1>Self Reporting Form</h1>
+	</div>	<BR>	
+        <div class="main">
+		<form>
+				<h3 class="instruct">				
+				Follow the given instructions:-<BR><BR>
+				1. Sanitize your hands before entering or leaving.<BR><BR>
+				2. Avoid touching your mouth,nose and eyes as well as other surfaces and decoration elements.<BR><BR>
+				3. Maintain 1.5metre social distancing.<BR><BR>
+				4. Mandatory use of face mask inside in the indoor areas.<BR><BR>
+				5. Cover your mouth with tissue while you cough.<BR><BR>
+				</h3>
+				
+				<!--
+				<center><img class="imgs" id="myimg"></center><br>
+				<h3 class="imgtxt">Please upload Certificate (.jpg,.jpeg,.png) :</h3>
+				<input class="imgs" type="file" id="input_img" accept=".jpg, .jpeg, .png" oninput="demo()"/>
+				-->
+				
+				<br><br>
+				
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="firstname" type="text" id="first_nm" name="first_name" placeholder="First Name"  required>
+                    <!--<label class="firstlabel">first name</label>-->
+                    <input class="lastname" type="text" id="last_nm" name="last_name" placeholder="Last Name" required><br>
+                    <!--<label class="lastlabel">last name</label>-->
+                </div>
+                <h2 class="name">Mobile Number</h2>
+                <input class="code" type="tel" name="code" id="area_co" placeholder="Area code" required>
+                <!--<label class="area-code">Area Code</label>-->
+                <input class="mob_no" type="tel" id="mob" name="mob_no" placeholder="Mobile Number" onfocus="create_list()" pattern="[0-9]{10}" onblur="check_doc()" required><br>
+                <!--<label class="mobile-number">mobile number</label>-->
+                <h2 class="name">Email</h2>
+                <input class="email" type="text"  id="email" name="email" placeholder="Email" required><br>
+
+                <h2 class="name">Address</h2>
+                <input class="address" type="text" id="address" name="address" placeholder="House no. , street/village" required><br>
+
+                <h2 class="name">City</h2>
+                <input class="city " type="text" id="city_nm" name="city" placeholder="city" required><br>
+
+                <h2 class="name">State</h2>
+                <input class="state" type="text" id="state_nm" name="state" placeholder="state" required><br>
+
+                <h2 class="name">Whom to meet</h2>
+                <select class="option" name="meet" id="person_list" required>
+                    <option  disabled="disabled" selected="selected">--Choose Option--</option>
+                </select>
+				
+				
+				<h2  class="name">Purpose Of the Visit :   </h2><INPUT class="purpose_of_meet" type="text" id="purposeMeet" name="purpose_of_meet" placeholder="purpose_of_meet" required>
+                <h2 class="name">Any symptoms -</h2>
+
+                <h3 class="name" id="fever">Fever :</h3>
+                <label class="radio">
+                    <input class="radio-one" type="radio" value="Yes" id="fev" name="fever" required>
+                    <span class="checkmark"></span>
+                    Yes
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" value="No" id="fev" name="fever" required>
+                    <span class="checkmark"></span>
+                    No
+                </label>
+                
+
+                <h3 class="name" id="fever">Cough :</h3>
+                <label class="radio">
+                    <input class="radio-one" type="radio"  value="Yes" id="cough" name="cough" required>
+                    <span class="checkmark"></span>
+                    Yes
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" value="No" id="cough" name="cough" required>
+                    <span class="checkmark"></span>
+                    No
+                </label>
+                
+
+                <h3 id="fever" class="name">Breathing difficulty :</h3>
+                <label class="radio">
+                    <input class="radio-one" type="radio"  value="Yes" id="breath" name="radio3" required>
+                    <span class="checkmark"></span>
+                    Yes
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio"  value="No" id="breath" name="radio3" required>
+                    <span class="checkmark"></span>
+                    No
+                </label>
+
+                <h3 id="fever" class="name" >Respiratory disease :</h3>
+                <label class="radio">
+                    <input class="radio-one" type="radio" value="Yes" id="res" name="radio4" required>
+                    <span class="checkmark"></span>
+                    Yes
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" value="No" id="res" name="radio4" required>
+                    <span class="checkmark"></span>
+                    No
+                </label><BR><BR>
+				
+				<h3 class="name">Time Of Meet : </h3><INPUT name="txt_tm" id="txt_tm" type="time" required /><BR><BR>
+				<h3 class="name">Date Of Meet : </h3><INPUT  name="txt_dt" id="txt_dt" type="date" required /><BR><BR>
+
+				
+               <center>
+					<button id="btn_sub"  type="button" onclick="uploadData()">Submit</button>
+					<button id="btn_sub"  type="reset" >Reset</button>
+
+				</center>
+				
+        </form>
+		
+        </div>
+  
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+	
+	<script src="NewScript2.js">
+	</script>
+</body>
+
+
+
+</html>
